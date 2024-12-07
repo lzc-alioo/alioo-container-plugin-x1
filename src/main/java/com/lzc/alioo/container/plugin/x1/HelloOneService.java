@@ -30,5 +30,11 @@ public class HelloOneService {
         return model;
     }
 
+    public JSONObject queryJSONObject(String name) {
+        JSONObject obj = new JSONObject();
+        obj.put("json.name", name);
+        obj.put("json.age", 20);
+        return obj;
+    }
 }
 

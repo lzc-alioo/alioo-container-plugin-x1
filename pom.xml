@@ -4,7 +4,7 @@
 
     <groupId>com.lzc.alioo.container.plugin</groupId>
     <artifactId>alioo-container-plugin-x1</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>alioo-container-plugin-x1</name>
@@ -12,13 +12,14 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <alioo.container.version>1.2-SNAPSHOT</alioo.container.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.alioo.maven</groupId>
             <artifactId>alioo-boot-maven-plugin</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${alioo.container.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -31,6 +32,7 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.83</version>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>
@@ -52,7 +54,7 @@
             <plugin>
                 <groupId>com.alioo.maven</groupId>
                 <artifactId>alioo-boot-maven-plugin</artifactId>
-                <version>1.1-SNAPSHOT</version>
+                <version>${alioo.container.version}</version>
                 <executions>
                     <execution>
                         <goals>
